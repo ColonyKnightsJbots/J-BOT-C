@@ -1,0 +1,21 @@
+Arm Up
+  if: command> arm up
+   then: arm motor- rotate (reverse)
+        to position ??
+
+Arm down
+  if: command> arm down
+    then: arm motor- rotate
+         to position 0
+
+Claw open
+  if: command> open
+    then: claw servo- rotate 
+
+Claw close
+  if: command> close
+    then: claw servo- rotate (partial)
+
+Carosal
+  if: command> left
+    then: motor- rotates
